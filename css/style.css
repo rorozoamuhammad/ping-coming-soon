@@ -188,4 +188,8 @@ body {
     .center form .desktop[data-error="error"] {
         display: none;
     }
+
+    .center .logo {
+        width: 50%;
+    }
 }

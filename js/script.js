@@ -3,7 +3,7 @@ const desktop = document.querySelector('.desktop');
 const mobile = document.querySelector('.mobile');
 const form = document.querySelector('form');
 
-form.addEventListener('submit', (e) => {
+form.addEventListener('submit', () => {
     if(txt.value === '') {
         txt.dataset.error = 'error';
         desktop.dataset.error = 'error';
@@ -11,7 +11,6 @@ form.addEventListener('submit', (e) => {
     } else {
         txt.database.error = 'ok';
         desktop.dataset.error = 'ok';
-        mobile.dataset.error = 'error';
-        e.preventDefault();
+        mobile.dataset.error = 'ok';
     }
 });
